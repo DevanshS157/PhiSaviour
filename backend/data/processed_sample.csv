@@ -1,0 +1,10 @@
+url,label,url_length,host_length,path_length,num_dots,num_hyphens,has_ip,suspicious_words,has_percent_encoded,num_subdomains
+http://203.0.113.5/login.example.invalid,malicious,40.0,11.0,22.0,3.0,0.0,1.0,1.0,0.0,2.0
+http://secure-login.bank-example.invalid/verify,malicious,47.0,33.0,7.0,2.0,2.0,0.0,4.0,0.0,1.0
+http://login.example.invalid@phish.example.invalid/,malicious,51.0,21.0,1.0,2.0,0.0,0.0,1.0,0.0,1.0
+http://example.invalid/login?redirect=http://bank.example.invalid,malicious,65.0,15.0,42.0,1.0,0.0,0.0,2.0,0.0,0.0
+http://very-long-subdomain-name-that-tries-to-hide-the-domain.example.invalid/path,malicious,82.0,70.0,5.0,2.0,9.0,0.0,0.0,0.0,1.0
+http://xn--pple-43d.example.invalid/login,malicious,41.0,28.0,6.0,2.0,3.0,0.0,1.0,0.0,1.0
+http://paypal.example.invalid.secure-confirm.example.invalid/login,malicious,66.0,53.0,6.0,5.0,1.0,0.0,3.0,0.0,4.0
+http://%2e%2e%2fexample.invalid/,malicious,32.0,24.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0
+http://www.example.invalid/normal-path,benign,38.0,19.0,12.0,2.0,0.0,0.0,0.0,0.0,1.0

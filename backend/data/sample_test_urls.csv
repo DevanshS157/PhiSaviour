@@ -1,0 +1,11 @@
+url,label
+http://203.0.113.5/login.example.invalid,malicious
+http://secure-login.bank-example.invalid/verify,malicious
+http://login.example.invalid@phish.example.invalid/,malicious
+http://example.invalid/login?redirect=http://bank.example.invalid,malicious
+http://very-long-subdomain-name-that-tries-to-hide-the-domain.example.invalid/path,malicious
+http://xn--pple-43d.example.invalid/login,malicious
+http://example.invalid:8080/login,malicious
+http://paypal.example.invalid.secure-confirm.example.invalid/login,malicious
+http://%2e%2e%2fexample.invalid/,malicious
+http://www.example.invalid/normal-path,benign

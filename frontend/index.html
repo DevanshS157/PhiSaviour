@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PhiSaviour — Phishing URL Detector</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="hero">
+        <div class="hero-inner">
+          <div class="logo">
+            <!-- simple shield logo -->
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 2l7 3v5c0 5-3.8 9.7-7 12-3.2-2.3-7-7-7-12V5l7-3z" fill="url(#g)" />
+              <defs>
+                <linearGradient id="g" x1="0" x2="1">
+                  <stop offset="0" stop-color="#0ea5ff" />
+                  <stop offset="1" stop-color="#7c3aed" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div>
+            <h1>PhiSaviour</h1>
+            <p class="tag">A lightweight phishing URL checker — paste a URL and get a quick assessment.</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <section class="panel input-panel" aria-labelledby="check-label">
+          <h2 id="check-label">Check a URL</h2>
+          <form id="predict-form" class="form" autocomplete="off">
+            <label for="url" class="visually-hidden">URL to check</label>
+            <div class="input-row">
+              <input id="url" name="url" type="url" inputmode="url" placeholder="https://example.com/login" required />
+              <button id="submit" class="btn primary" type="submit">Check</button>
+            </div>
+            <div class="hint">Tip: try <code>http://example-login.test/bad-path</code></div>
+          </form>
+        </section>
+
+        <section id="result" class="panel result-panel" aria-live="polite"></section>
+
+        <aside class="panel history-panel" aria-labelledby="history-label">
+          <h3 id="history-label">Recent checks</h3>
+          <ul id="history" class="history-list" aria-live="polite"></ul>
+        </aside>
+      </main>
+
+      <footer class="foot">
+        <small>Built for demo & education. Don't use for production detection.</small>
+      </footer>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
