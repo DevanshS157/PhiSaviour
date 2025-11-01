@@ -12,7 +12,7 @@ cd backend
 uvicorn main:app --reload --port 8000
 ```
 
-Open http://localhost:5500/ and paste a URL to test.
+Open https://devanshs157.github.io/PhiSaviour/ and paste a URL to test.
 
 Project layout:
 - `frontend/` — static site (index.html, style.css, app.js)
